@@ -13,7 +13,7 @@ def test_601APIPUBLIC_analysis():
     assert score > 0.25, "Sentiment should be positive" # this should be positive, tested on website was 0.3 which is green
 
 def test_weather():
-    weatherrequest = requests.get('http://api.openweathermap.org/data/2.5/weather?lat=38.8977&lon=77.0365&appid=INSERTHERE')
+    weatherrequest = requests.get('http://api.openweathermap.org/data/2.5/weather?lat=38.8977&lon=77.0365&appid=INSERTHERE') # will need openweather APi account
     assert weatherrequest >-200 and < 200 # temperature shouldnt be greater than 200 or less than -200 
 
 def test_API_function(request):
