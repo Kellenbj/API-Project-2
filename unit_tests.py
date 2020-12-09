@@ -38,7 +38,7 @@ def test_case2():
     test_API_function(request)
 
 
-def test_case3();
+def test_case3():
     request = t.get_status(806191194736889856) #UK PM not in DC so weather should be wrong but function will run correctly
     test_API_function(request)
 
